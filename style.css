@@ -678,5 +678,33 @@ a:hover{
     width:90%;
     margin:auto;
 }
+@media (max-width:768px){
 
+    section{
+        padding:60px 20px;
+    }
+
+    .timeline-card{
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+        margin:0 auto;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
+
+    .countdown-container{
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .time-box{
+        width:45%;
+        padding:18px;
+    }
+
+}
 }
