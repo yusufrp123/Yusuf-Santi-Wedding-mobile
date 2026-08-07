@@ -192,12 +192,6 @@ section{
     left:-40px;
 }
 
-@media screen and (max-width:768px){
-
-.timeline-card{
-    width:90%;
-    margin:auto;
-}
 
 .timeline-card.left,
 .timeline-card.right{
@@ -276,26 +270,7 @@ section{
     text-transform:uppercase;
 
 }
-@media (max-width:768px){
 
-    .countdown-container{
-        gap:12px;
-    }
-
-    .time-box{
-        width:120px;
-        padding:18px;
-    }
-
-    .time-box span{
-        font-size:36px;
-    }
-
-    .time-box small{
-        font-size:12px;
-    }
-
-}
 
 
 /* ===================================
@@ -677,5 +652,31 @@ a:hover{
     margin:18px auto 0;
 
 }
-@media screen and (max-width:768px)
+@media (max-width:768px){
+
+    .countdown-container{
+        gap:12px;
+    }
+
+    .time-box{
+        width:120px;
+        padding:18px;
+    }
+
+    .time-box span{
+        font-size:36px;
+    }
+
+    .time-box small{
+        font-size:12px;
+    }
+
+}
+@media screen and (max-width:768px){
+
+.timeline-card{
+    width:90%;
+    margin:auto;
+}
+
 }
