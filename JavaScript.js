@@ -23,3 +23,25 @@ setInterval(function(){
     document.getElementById("seconds").innerHTML = seconds;
 
 },1000);
+const music = document.getElementById("bg-music");
+const musicButton = document.getElementById("music-button");
+
+let isPlaying = false;
+
+musicButton.addEventListener("click", function(){
+
+    if(isPlaying){
+
+        music.pause();
+        musicButton.textContent = "♫";
+        isPlaying = false;
+
+    }else{
+
+        music.play();
+        musicButton.textContent = "❚❚";
+        isPlaying = true;
+
+    }
+
+});
