@@ -678,33 +678,201 @@ a:hover{
     width:90%;
     margin:auto;
 }
-@media (max-width:768px){
+/* ===================================
+   MOBILE RESPONSIVE
+=================================== */
+
+@media screen and (max-width: 768px){
+
+    /* SECTION */
 
     section{
-        padding:60px 20px;
+        min-height:100vh;
+        padding:70px 20px;
+        box-sizing:border-box;
+
+        background-attachment:scroll;
+        background-size:cover;
+        background-position:center;
     }
+
+
+    /* TITLE */
+
+    h1{
+        font-size:36px;
+    }
+
+    h2{
+        font-size:30px;
+        margin-top:40px;
+    }
+
+    h3{
+        font-size:25px;
+    }
+
+    h4{
+        font-size:21px;
+    }
+
+    p{
+        font-size:16px;
+        line-height:1.8;
+        max-width:100%;
+    }
+
+
+    /* COUPLE NAME */
+
+    .couple-name{
+        font-size:42px;
+    }
+
+    .and{
+        font-size:36px;
+        margin:10px;
+    }
+
+
+    /* EVENT */
+
+    .event-container{
+        width:100%;
+        gap:20px;
+        margin-top:35px;
+    }
+
+    .event-card{
+        width:100%;
+        max-width:340px;
+        box-sizing:border-box;
+        padding:25px 20px;
+    }
+
+
+    /* BRIDE & GROOM */
+
+    .person-container{
+        width:100%;
+        gap:25px;
+        margin-top:35px;
+    }
+
+    .person-card{
+        width:100%;
+        max-width:340px;
+        box-sizing:border-box;
+        padding:30px 20px;
+    }
+
+    .profile-photo{
+        width:180px;
+        height:230px;
+    }
+
+    .profile-photo-groom{
+        width:190px;
+        height:240px;
+    }
+
+
+    /* LOVE STORY */
 
     .timeline-card{
         width:100%;
-        max-width:100%;
+        max-width:340px;
         box-sizing:border-box;
-        margin:0 auto;
+        margin:auto;
     }
 
-    img{
-        max-width:100%;
-        height:auto;
+    .timeline-card.left,
+    .timeline-card.right{
+        align-self:center;
     }
+
+    /* Hilangkan titik timeline di HP */
+
+    .timeline-card::before{
+        display:none;
+    }
+
+    /* Hilangkan garis tengah */
+
+    .timeline::before{
+        display:none;
+    }
+
+    /* Story content menjadi vertikal */
+
+    .story-content{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+    }
+
+    .timeline-card.right .story-content{
+        flex-direction:column;
+    }
+
+    .story-gallery{
+        width:100%;
+        align-items:center;
+    }
+
+    .love-story-photo{
+        width:140px;
+        height:180px;
+        object-fit:cover;
+        margin:8px auto;
+    }
+
+    .story-text{
+        width:100%;
+        text-align:left;
+        margin-top:10px;
+    }
+
+
+    /* COUNTDOWN */
 
     .countdown-container{
+        width:100%;
+        display:flex;
+        justify-content:center;
         flex-wrap:wrap;
-        gap:15px;
+        gap:12px;
+        margin-top:30px;
     }
 
     .time-box{
-        width:45%;
-        padding:18px;
+        width:120px;
+        padding:18px 10px;
+        box-sizing:border-box;
     }
 
-}
+    .time-box span{
+        font-size:36px;
+    }
+
+    .time-box small{
+        font-size:11px;
+        letter-spacing:1px;
+    }
+
+
+    /* GENERAL IMAGE */
+
+    img{
+        max-width:100%;
+    }
+
+
+    /* SCROLL INDICATOR */
+
+    .scroll-indicator{
+        margin-top:40px;
+    }
+
 }
