@@ -85,7 +85,32 @@ section{
     
 
 }
+#music-button{
+    position:fixed;
+    right:20px;
+    bottom:20px;
 
+    width:50px;
+    height:50px;
+
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.3);
+
+    background:rgba(42,70,54,.85);
+    color:#E7C87C;
+
+    font-size:24px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+
+    z-index:9999;
+
+    backdrop-filter:blur(8px);
+}
 
 /* ===================================
    LOVE STORY
