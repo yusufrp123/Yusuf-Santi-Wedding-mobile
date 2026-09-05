@@ -703,6 +703,267 @@ a:hover{
     width:90%;
     margin:auto;
 }
+   /* =========================
+   WEDDING GIFT
+========================= */
+
+#wedding-gift{
+    text-align:center;
+    padding:100px 20px;
+}
+
+
+/* Title */
+
+#wedding-gift h2{
+    font-family:"Playfair Display", serif;
+    color:#E7C87C;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+
+/* Introduction */
+
+.gift-intro{
+    max-width:700px;
+    margin:0 auto 50px;
+
+    color:white;
+
+    font-size:18px;
+    line-height:1.8;
+}
+
+
+/* Container */
+
+.gift-container{
+    display:flex;
+    justify-content:center;
+    align-items:stretch;
+
+    gap:30px;
+
+    max-width:900px;
+    margin:0 auto;
+}
+
+
+/* Card */
+
+.gift-card{
+
+    width:360px;
+
+    padding:35px 25px;
+
+    background:rgba(255,255,255,0.08);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    border-radius:20px;
+
+    backdrop-filter:blur(8px);
+
+    -webkit-backdrop-filter:blur(8px);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+    transition:.3s;
+}
+
+
+/* Card hover */
+
+.gift-card:hover{
+
+    transform:translateY(-5px);
+
+    background:rgba(255,255,255,0.11);
+
+}
+
+
+/* Card title */
+
+.gift-card h3{
+
+    font-family:"Playfair Display", serif;
+
+    color:#E7C87C;
+
+    font-size:24px;
+
+    margin-bottom:30px;
+
+}
+
+
+/* Bank logo */
+
+.bank-logo{
+
+    width:220px;
+    height:130px;
+
+    object-fit:contain;
+
+    background:white;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    border:4px solid #D6B36A;
+
+    margin-bottom:25px;
+}
+
+
+/* Account name */
+
+.account-name{
+
+    color:white;
+
+    font-size:17px;
+
+    margin:10px 0;
+}
+
+
+/* Account number */
+
+.account-number{
+
+    color:#E7C87C;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+    margin:15px 0 25px;
+}
+
+
+/* Copy button */
+
+.copy-button{
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:25px;
+
+    background:#D6B36A;
+
+    color:#173B2A;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+
+/* Button hover */
+
+.copy-button:hover{
+
+    background:#E7C87C;
+
+    transform:scale(1.05);
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width:768px){
+
+    #wedding-gift{
+
+        padding:80px 15px;
+
+    }
+
+
+    #wedding-gift h2{
+
+        font-size:34px;
+
+    }
+
+
+    .gift-intro{
+
+        font-size:16px;
+
+        line-height:1.7;
+
+        padding:0 10px;
+
+        margin-bottom:35px;
+
+    }
+
+
+    .gift-container{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:25px;
+
+    }
+
+
+    .gift-card{
+
+        width:100%;
+
+        max-width:360px;
+
+        box-sizing:border-box;
+
+        padding:30px 20px;
+
+    }
+
+
+    .gift-card h3{
+
+        font-size:22px;
+
+    }
+
+
+    .bank-logo{
+
+        width:200px;
+
+        height:120px;
+
+    }
+
+
+    .account-number{
+
+        font-size:21px;
+
+    }
+
+}
 /* ===================================
    MOBILE RESPONSIVE
 =================================== */
