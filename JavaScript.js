@@ -43,5 +43,28 @@ musicButton.addEventListener("click", function(){
         isPlaying = true;
 
     }
+    function copyAccount(accountNumber, button){
+
+    navigator.clipboard.writeText(accountNumber)
+
+    .then(function(){
+
+        button.textContent = "Copied ✓";
+
+        setTimeout(function(){
+
+            button.textContent = "Copy Account";
+
+        }, 2000);
+
+    })
+
+    .catch(function(){
+
+        alert("Unable to copy account number.");
+
+    });
+
+}
 
 });
