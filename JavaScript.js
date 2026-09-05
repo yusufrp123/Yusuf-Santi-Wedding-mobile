@@ -43,7 +43,9 @@ musicButton.addEventListener("click", function(){
         isPlaying = true;
 
     }
-    function copyAccount(accountNumber, button){
+    
+});
+function copyAccount(accountNumber, button){
 
     navigator.clipboard.writeText(accountNumber)
 
@@ -66,5 +68,3 @@ musicButton.addEventListener("click", function(){
     });
 
 }
-
-});
